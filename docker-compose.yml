@@ -1,0 +1,18 @@
+version: '2'
+services:
+    linkerd:
+        image: buoyantio/linkerd:0.8.6
+        volumes:
+            -  "./config.yml:/config.yml"
+        command:
+            "/config.yml"
+        ports:
+            - "9990:9990"
+            - "8080:8080"
+        links:
+            - ping_service:ping_service
+        depends_on:
+            - ping_service
+
+    ping_service:
+        build: ./ping_service

@@ -1,0 +1,12 @@
+{
+  "name": "artillery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "quick": "artillery quick -d 30 -r 100 -n 40 http://127.0.0.1:8080"
+  },
+  "dependencies": {
+    "artillery": "^1.5.0"
+  }
+}
