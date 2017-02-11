@@ -9,8 +9,6 @@ services:
         ports:
             - "9990:9990"
             - "8080:8080"
-        links:
-            - ping_service:ping_service
         depends_on:
             - ping_service
 

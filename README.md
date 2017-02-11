@@ -1,3 +1,9 @@
-#Running with docker
+#Linker D example
 
-docker run --name linkerd -v `pwd`/config.yaml:/config.yaml buoyantio/linkerd:0.8.6 /config.yaml
+An example usage of linkerd
+
+
+Open Linkerd interface here http://localhost:9990/
+
+
+Open Zipkin here http://localhost:8081/
